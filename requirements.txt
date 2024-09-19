@@ -1,0 +1,5 @@
+flox-lib==0.19.6
+cattrs
+requests
+linguee-api
+detectlanguage

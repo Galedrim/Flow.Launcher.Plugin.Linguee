@@ -1,0 +1,76 @@
+body:
+  - type: passwordBox
+    attributes:
+      name: api_key
+      label: 'API Key:'
+      defaultValue: ""
+      description: API key to use Detect Language API
+  - type: dropdown
+    attributes:
+      name: first_language
+      label: "First Language:"
+      defaultValue: English
+      options:
+        - Bulgarian
+        - Czech
+        - Danish
+        - German
+        - Greek
+        - English
+        - Spanish
+        - Estonian
+        - Finnish
+        - French
+        - Hungarian
+        - Italian
+        - Japan
+        - Lithuanian
+        - Latvian
+        - Maltese
+        - Dutch
+        - Polish
+        - Portuguese
+        - Romanian
+        - Russian
+        - Slovak
+        - Swedish
+        - Chinese
+      description: "The initial language to be used"
+  - type: dropdown
+    attributes:
+      name: second_language
+      label: "Second Language:"
+      defaultValue: French
+      options:
+        - Bulgarian
+        - Czech
+        - Danish
+        - German
+        - Greek
+        - English
+        - Spanish
+        - Estonian
+        - Finnish
+        - French
+        - Hungarian
+        - Italian
+        - Japan
+        - Lithuanian
+        - Latvian
+        - Maltese
+        - Dutch
+        - Polish
+        - Portuguese
+        - Romanian
+        - Russian
+        - Slovak
+        - Swedish
+        - Chinese
+      description: "The second language to be used"
+  - type: checkbox
+    attributes:
+      name: show_less_common
+      label: 'Show less common:'
+      defaultValue: false
+      description: "When enabled, the less common translation are displayed"
+

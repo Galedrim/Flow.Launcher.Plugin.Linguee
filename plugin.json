@@ -1,0 +1,12 @@
+{
+    "ID": "9316b88a-009d-498c-a980-1aefa44d2fd2",
+    "ActionKeyword": "lg",
+    "Name": "Linguee",
+    "Description": "Quickly translate text from one language to another.",
+    "Author": "Galedrim",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/Galedrim/Flow.Launcher.Plugin.Linguee",
+    "IcoPath": "images\\app.png",
+    "ExecuteFileName": "main.py"
+}
