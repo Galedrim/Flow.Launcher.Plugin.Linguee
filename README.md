@@ -1,5 +1,7 @@
 # Flow.Launcher.Plugin.Linguee
 
+![image](https://github.com/user-attachments/assets/c410cd72-4f34-40e0-b83a-ecf613bc8971)
+
 ## Features
 
 * Autodetect languages with language detect API (requires an API key - you can obtain one free by signing up at https://detectlanguage.com/ and following the instructions on the home page)
@@ -37,4 +39,3 @@ The easiest way to install it is to open a CLI like Powershell, navigate into th
 ## Usage
 
 Type ```lg``` to start searching in Linguee.
-You can filter Pokemon by typing the name.
