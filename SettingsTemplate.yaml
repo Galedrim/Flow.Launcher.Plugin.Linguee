@@ -7,8 +7,8 @@ body:
       description: API key to use Detect Language API
   - type: dropdown
     attributes:
-      name: first_language
-      label: "First Language:"
+      name: main_language
+      label: "Main Language:"
       defaultValue: English
       options:
         - Bulgarian
@@ -35,11 +35,11 @@ body:
         - Slovak
         - Swedish
         - Chinese
-      description: "The initial language to be used"
+      description: "The main language to be used"
   - type: dropdown
     attributes:
-      name: second_language
-      label: "Second Language:"
+      name: secondary_language
+      label: "Secondary Language:"
       defaultValue: French
       options:
         - Bulgarian
@@ -69,8 +69,8 @@ body:
       description: "The second language to be used"
   - type: checkbox
     attributes:
-      name: show_less_common
-      label: 'Show less common:'
-      defaultValue: false
+      name: show_less_common_translation
+      label: 'Show less common translation: '
+      defaultValue: True
       description: "When enabled, the less common translation are displayed"
 

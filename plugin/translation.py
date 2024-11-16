@@ -25,6 +25,10 @@ class Word:
     forms: List[str] = field(default_factory=list)
     translations: List[Translation] = field(default_factory=list)
 
+@dataclass
+class ErrorResponse:
+    message: str
+
 class Translations:
     def __init__(self):
         pass
@@ -34,4 +38,7 @@ class Translations:
         api_root = "https://linguee-api.fly.dev/api/v2"
         resp = requests.get(f"{api_root}/translations", params={"query": word, "src": languagePair.src.code, "dst": languagePair.dst.code})
         converter = cattr.Converter()
-        return [converter.structure(item, Word) for item in resp.json()]
+        if 'message' in resp.json():
+            return converter.structure(resp.json(), ErrorResponse)
+        else:
+            return [converter.structure(item, Word) for item in resp.json()]
